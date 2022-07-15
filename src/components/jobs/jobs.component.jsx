@@ -1,12 +1,12 @@
 import React from "react";
 import Job from "../job/job.component";
 
-const Jobs = ({ jobs }) => {
+const Jobs = ({ jobs, customClass }) => {
   return (
     <>
-      {jobs.map((j) => (
-        <Job job={j} key={j.id} />
-      ))}
+      <div className={`jobs ${customClass}`}>
+        {jobs && jobs.map((j) => <Job job={j} key={j.id} />)}
+      </div>
     </>
   );
 };
