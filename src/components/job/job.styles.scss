@@ -1,0 +1,92 @@
+@import "../../styles/variables";
+
+.job {
+  width: 70vw;
+  padding: 1.5rem 2rem;
+  background-color: $color-white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 15%);
+  overflow: hidden;
+  position: relative;
+
+  &.isFeatured {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $color-primary;
+      height: 100%;
+      width: 5px;
+      left: 0;
+    }
+  }
+
+  &__info {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+
+    &__img-container {
+      img {
+        width: 80%;
+      }
+    }
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      &--header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &__company {
+          font-weight: 700;
+          color: $color-primary;
+        }
+
+        &__new-tag,
+        &__featured-tag {
+          padding: 2px 8px;
+          padding-top: 6px;
+          border-radius: 10px;
+          font-size: 12px;
+          font-weight: 500;
+          color: $color-white;
+        }
+
+        &__new-tag {
+          background-color: $color-primary;
+        }
+
+        &__featured-tag {
+          background-color: $color-very-dark-cyan;
+        }
+      }
+
+      &--position {
+        cursor: pointer;
+        font-size: 18px;
+        transition: all 100ms linear;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+
+      &--footer {
+        color: $color-dark-cyan;
+      }
+    }
+  }
+
+  &__tags {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}

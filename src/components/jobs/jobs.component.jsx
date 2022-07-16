@@ -1,6 +1,8 @@
 import React from "react";
 import Job from "../job/job.component";
 
+import "./jobs.styles.scss";
+
 const Jobs = ({ jobs, customClass }) => {
   return (
     <>
