@@ -1,17 +1,23 @@
-//import { roles, level, languages, tools } from "../../data/data";
-import { roles } from "../../data/data";
+import { useFilter } from "../../context/filter.context";
 import FilterBox from "../filter-box/filter-box.component";
 import "./filter.styles.scss";
 
 const Filter = ({ customClass }) => {
+  const { filters } = useFilter();
+
   return (
     <>
-      <div className={`filter ${customClass}`}>
-        <div className="filter__filters">
-          {roles && roles.map((role) => <FilterBox key={role} filter={role} />)}
+      {filters.length > 0 && (
+        <div className={`filter ${customClass}`}>
+          <div className="filter__filters">
+            {filters &&
+              filters.map((filter) => (
+                <FilterBox key={filter} filter={filter} />
+              ))}
+          </div>
+          <button className="filter__clear">Clear</button>
         </div>
-        <button className="filter__clear">Clear</button>
-      </div>
+      )}
     </>
   );
 };

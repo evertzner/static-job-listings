@@ -1,7 +1,18 @@
+import { useFilter } from "../../context/filter.context";
 import "./tag.styles.scss";
 
 const Tag = ({ tag }) => {
-  return <div className="tag">{tag}</div>;
+  const { addFilterToFilters } = useFilter();
+
+  const addFilter = () => {
+    addFilterToFilters(tag);
+  };
+
+  return (
+    <div className="tag" onClick={addFilter}>
+      {tag}
+    </div>
+  );
 };
 
 export default Tag;
