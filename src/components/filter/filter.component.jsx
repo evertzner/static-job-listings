@@ -3,7 +3,11 @@ import FilterBox from "../filter-box/filter-box.component";
 import "./filter.styles.scss";
 
 const Filter = ({ customClass }) => {
-  const { filters } = useFilter();
+  const { filters, clearAllFilters } = useFilter();
+
+  const clearFilters = () => {
+    clearAllFilters();
+  };
 
   return (
     <>
@@ -15,7 +19,9 @@ const Filter = ({ customClass }) => {
                 <FilterBox key={filter} filter={filter} />
               ))}
           </div>
-          <button className="filter__clear">Clear</button>
+          <button className="filter__clear" onClick={clearFilters}>
+            Clear
+          </button>
         </div>
       )}
     </>

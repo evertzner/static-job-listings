@@ -7,6 +7,25 @@ import "./jobs.styles.scss";
 const Jobs = ({ jobs, customClass }) => {
   const { filters } = useFilter();
 
+  let filteredJobs = [];
+
+  const filterJobs = (filter) => {
+    jobs.forEach((j) => {
+      if (
+        filter.every(
+          (f) =>
+            j.languages.includes(f) ||
+            j.tools.includes(f) ||
+            j.level === f ||
+            j.role === f
+        )
+      )
+        filteredJobs.push(j);
+    });
+  };
+
+  filterJobs(filters);
+
   return (
     <>
       <div
@@ -14,7 +33,7 @@ const Jobs = ({ jobs, customClass }) => {
           filters.length === 0 && "notFiltered"
         }`}
       >
-        {jobs && jobs.map((j) => <Job job={j} key={j.id} />)}
+        {filteredJobs && filteredJobs.map((j) => <Job job={j} key={j.id} />)}
       </div>
     </>
   );

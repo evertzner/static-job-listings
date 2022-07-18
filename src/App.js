@@ -12,7 +12,7 @@ const App = () => {
     <FilterProvider>
       <div className="app">
         <header className="app__header"></header>
-        {<Filter customClass={"app__filter"} />}
+        <Filter customClass={"app__filter"} />
         <Jobs customClass={"app__jobs"} jobs={jobs} />
       </div>
     </FilterProvider>

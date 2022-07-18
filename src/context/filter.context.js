@@ -8,10 +8,15 @@ const addFilter = (filters, filterToAdd) => {
   return filters;
 };
 
-const FilterContext = React.createContext({
-  filters: [],
+const removeFilter = (filters, filterToRemove) => {
+  return filters.filter((filter) => filter !== filterToRemove);
+};
+
+export const FilterContext = React.createContext({
+  filtersToFilter: [],
   addFilterToFilters: () => {},
-  removeFilter: () => {},
+  removeFilterFromFilters: () => {},
+  clearAllFilters: () => {},
 });
 
 const FILTERS_ACTION_TYPES = {
@@ -56,9 +61,20 @@ export function FilterProvider({ children }) {
     updateFiltersReducer(newFilter);
   };
 
+  const removeFilterFromFilters = (filterToRemove) => {
+    const newFilter = removeFilter(filters, filterToRemove);
+    updateFiltersReducer(newFilter);
+  };
+
+  const clearAllFilters = () => {
+    updateFiltersReducer([]);
+  };
+
   const value = {
     filters,
     addFilterToFilters,
+    removeFilterFromFilters,
+    clearAllFilters,
   };
 
   return (
