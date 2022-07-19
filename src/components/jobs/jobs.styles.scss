@@ -1,8 +1,14 @@
+@import "../../styles/variables";
+
 .jobs {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   transition: margin-top 100ms linear;
+
+  @media only screen and (max-width: $bp-small) {
+    gap: 3rem;
+  }
 
   &.notFiltered {
     margin-top: 30px;

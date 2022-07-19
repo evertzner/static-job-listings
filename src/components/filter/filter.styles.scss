@@ -2,7 +2,7 @@
 
 .filter {
   background-color: $color-white;
-  height: 50px;
+  height: auto;
   width: 70vw;
   border-radius: 5px;
   padding: 15px 25px;
@@ -11,10 +11,21 @@
   align-items: center;
   justify-content: space-between;
 
+  @media only screen and (max-width: $bp-small) {
+    width: 90vw;
+    padding: 15px 20px;
+    margin-top: 15px;
+  }
+
   &__filters {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: -1px;
+
+    @media only screen and (max-width: $bp-small) {
+      gap: 0.5rem;
+    }
   }
 
   &__clear {

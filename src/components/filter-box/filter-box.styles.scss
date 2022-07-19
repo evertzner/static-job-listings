@@ -1,7 +1,6 @@
 @import "../../styles/variables";
 
 .filter-box {
-  //border: 1px solid transparent;
   overflow: hidden;
   background-color: $color-background;
   border-radius: 3px;
@@ -31,6 +30,7 @@
       background-color: $color-very-dark-cyan;
     }
   }
+
   ion-icon {
     --ionicon-stroke-width: 70px;
   }

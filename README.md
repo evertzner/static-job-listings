@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Frontend Mentor - Rock, Paper, Scissors solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Frontend Mentor - Rock, Paper, Scissors solution](#frontend-mentor---rock-paper-scissors-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout for the game depending on their device's screen size
+- Play Rock, Paper, Scissors against the computer
+- Maintain the state of the score after refreshing the browser _(optional)_
+- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+**Main page**
+![](./screenshots/rock-paper-scissors-screenshot-1.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Selected option**
+![](./screenshots/rock-paper-scissors-screenshot-2.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Rules**
+![](./screenshots/rock-paper-scissors-screenshot-3.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+- Solution URL: [https://github.com/evertzner/rock-paper-scissors](https://github.com/evertzner/rock-paper-scissors)
+- Live Site URL: [https://lustrous-entremet-cdfc14.netlify.app/](https://lustrous-entremet-cdfc14.netlify.app/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## My process
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Semantic HTML5 markup
+- CSS custom properties
+- SCSS
+- Flexbox
+- CSS Grid
+- [React](https://reactjs.org/) - JS library
+- [Redux Toolkit](https://redux-toolkit.js.org/) - Redux
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### What I learned
 
-## Learn More
+I use this project to have a big focus on react, redux and improving designing technics.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Partial SCSS to have organized styling in modules.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Continued development
 
-### Code Splitting
+I want to get more in deep into Redux as it is a powerful tool to manage data into an application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Useful resources
 
-### Analyzing the Bundle Size
+- [Zero To Mastery](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/) - Udemy course 'Complete React Developer in 2022 (w/ Redux, Hooks, GraphQL)' from 'Zero to Mastery' 
+- [Maximilian Schwarzmüller](https://www.udemy.com/course/react-the-complete-guide-incl-redux/) - Udemy course 'React - The Complete Guide (incl Hooks, React Router, Redux)' from 'Maximilian Schwarzmüller' 
+- [Kevin Powell](https://www.youtube.com/kepowob) - Amazing YouTube channel to learn all about CSS.
+- [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified) - Awesome YouTube channel to learn everything about web development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub - [evertzner](https://github.com/evertzner)
+- Frontend Mentor - [@evertzner](https://www.frontendmentor.io/profile/evertzner)
