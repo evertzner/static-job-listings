@@ -1,3 +1,4 @@
+import React from "react";
 import { useFilter } from "../../context/filter.context";
 import FilterBox from "../filter-box/filter-box.component";
 import "./filter.styles.scss";
