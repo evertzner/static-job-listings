@@ -1,37 +1,37 @@
 @import "../../styles/variables";
 
 .filter-box {
-  overflow: hidden;
-  background-color: $color-background;
-  border-radius: 3px;
-  color: $color-primary;
-  font-weight: 700;
-  font-size: 13px;
-  display: flex;
-  justify-content: space-between;
+	overflow: hidden;
+	background-color: $color-background;
+	border-radius: 3px;
+	color: $color-primary;
+	font-weight: 700;
+	font-size: 13px;
+	display: flex;
+	justify-content: space-between;
 
-  &__text {
-    padding: 4px 7px;
-    padding-top: 6px;
-  }
+	&__text {
+		padding: 4px 7px;
+		padding-top: 6px;
+	}
 
-  &__close {
-    background-color: $color-primary;
-    color: $color-background;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 4px;
-    font-size: 17px;
-    transition: all 100ms linear;
-    cursor: pointer;
+	&__close {
+		background-color: $color-primary;
+		color: $color-background;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		padding: 0 4px;
+		font-size: 17px;
+		transition: all 100ms linear;
+		cursor: pointer;
 
-    &:hover {
-      background-color: $color-very-dark-cyan;
-    }
-  }
+		&:hover {
+			background-color: $color-very-dark-cyan;
+		}
+	}
 
-  ion-icon {
-    --ionicon-stroke-width: 70px;
-  }
+	ion-icon {
+		--ionicon-stroke-width: 70px;
+	}
 }
