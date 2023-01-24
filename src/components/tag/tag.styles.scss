@@ -1,17 +1,17 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .tag {
-	cursor: pointer;
-	background-color: $color-background;
-	color: $color-primary;
-	font-size: 13px;
-	font-weight: 700;
-	padding: 8px 10px;
-	border-radius: 5px;
-	transition: all 100ms linear;
+  cursor: pointer;
+  background-color: $color-background;
+  color: $color-primary;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: all 100ms linear;
 
-	&:hover {
-		background-color: $color-primary;
-		color: $color-background;
-	}
+  &:hover {
+    background-color: $color-primary;
+    color: $color-background;
+  }
 }

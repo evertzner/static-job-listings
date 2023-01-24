@@ -1,162 +1,162 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .job {
-	width: 70vw;
-	padding: 1rem 1.5rem;
-	background-color: $color-white;
-	border-radius: 5px;
-	display: grid;
-	grid-template-columns: max-content 1fr;
-	gap: 1rem;
-	align-items: center;
-	box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 15%);
-	position: relative;
+  width: 70vw;
+  padding: 1rem 1.5rem;
+  background-color: $color-white;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 15%);
+  position: relative;
 
-	@media only screen and (max-width: $bp-medium) {
-		padding: 1rem 2.5rem;
-		gap: 0.25rem;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1rem 2.5rem;
+    gap: 0.25rem;
 
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
-	}
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 
-	@media only screen and (max-width: $bp-small) {
-		width: 90vw;
-		padding: 1rem 0.5rem;
-		grid-template-rows: 1fr max-content;
-	}
+  @media only screen and (max-width: $bp-small) {
+    width: 90vw;
+    padding: 1rem 0.5rem;
+    grid-template-rows: 1fr max-content;
+  }
 
-	&.isFeatured {
-		&::before {
-			content: "";
-			position: absolute;
-			background-color: $color-primary;
-			height: 100%;
-			width: 5px;
-			left: 0;
-			border-top-left-radius: 5px;
-			border-bottom-left-radius: 5px;
-		}
-	}
+  &.isFeatured {
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $color-primary;
+      height: 100%;
+      width: 5px;
+      left: 0;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
 
-	&__info {
-		display: flex;
-		gap: 1rem;
-		align-items: center;
+  &__info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 
-		@media only screen and (max-width: $bp-small) {
-			padding: 0 1rem;
-			padding-top: 1rem;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1rem;
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
 
-			&::after {
-				content: "";
-				width: 100%;
-				height: 1px;
-				background-color: $color-dark-cyan;
-			}
-		}
+      &::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $color-dark-cyan;
+      }
+    }
 
-		&__img-container {
-			img {
-				width: 70px;
+    &__img-container {
+      img {
+        width: 70px;
 
-				@media only screen and (max-width: $bp-small) {
-					width: 50px;
-					position: absolute;
-					left: 20px;
-					top: -25px;
-				}
-			}
-		}
+        @media only screen and (max-width: $bp-small) {
+          width: 50px;
+          position: absolute;
+          left: 20px;
+          top: -25px;
+        }
+      }
+    }
 
-		&__details {
-			display: flex;
-			flex-direction: column;
-			gap: 0.5rem;
+    &__details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
 
-			@media only screen and (max-width: $bp-small) {
-				gap: 0.75rem;
-			}
+      @media only screen and (max-width: $bp-small) {
+        gap: 0.75rem;
+      }
 
-			&--header {
-				display: flex;
-				align-items: center;
-				gap: 0.5rem;
+      &--header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
 
-				@media only screen and (max-width: $bp-small) {
-					gap: 1rem;
-					flex-wrap: wrap;
-				}
+        @media only screen and (max-width: $bp-small) {
+          gap: 1rem;
+          flex-wrap: wrap;
+        }
 
-				&__company {
-					font-weight: 700;
-					color: $color-primary;
+        &__company {
+          font-weight: 700;
+          color: $color-primary;
 
-					@media only screen and (max-width: $bp-small) {
-						font-size: 19px;
-					}
-				}
+          @media only screen and (max-width: $bp-small) {
+            font-size: 19px;
+          }
+        }
 
-				&__new-tag,
-				&__featured-tag {
-					padding: 2px 8px;
-					padding-top: 6px;
-					border-radius: 10px;
-					font-size: 12px;
-					font-weight: 500;
-					color: $color-white;
+        &__new-tag,
+        &__featured-tag {
+          padding: 2px 8px;
+          padding-top: 6px;
+          border-radius: 10px;
+          font-size: 12px;
+          font-weight: 500;
+          color: $color-white;
 
-					@media only screen and (max-width: $bp-small) {
-						font-size: 16px;
-					}
-				}
+          @media only screen and (max-width: $bp-small) {
+            font-size: 16px;
+          }
+        }
 
-				&__new-tag {
-					background-color: $color-primary;
-				}
+        &__new-tag {
+          background-color: $color-primary;
+        }
 
-				&__featured-tag {
-					background-color: $color-very-dark-cyan;
-				}
-			}
+        &__featured-tag {
+          background-color: $color-very-dark-cyan;
+        }
+      }
 
-			&--position {
-				cursor: pointer;
-				font-size: 18px;
-				transition: all 100ms linear;
+      &--position {
+        cursor: pointer;
+        font-size: 18px;
+        transition: all 100ms linear;
 
-				@media only screen and (max-width: $bp-small) {
-					font-size: 21px;
-				}
+        @media only screen and (max-width: $bp-small) {
+          font-size: 21px;
+        }
 
-				&:hover {
-					color: $color-primary;
-				}
-			}
+        &:hover {
+          color: $color-primary;
+        }
+      }
 
-			&--footer {
-				color: $color-dark-cyan;
-			}
-		}
-	}
+      &--footer {
+        color: $color-dark-cyan;
+      }
+    }
+  }
 
-	&__tags {
-		justify-self: end;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem;
-		align-items: center;
+  &__tags {
+    justify-self: end;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
 
-		@media only screen and (max-width: $bp-medium) {
-			justify-self: start;
-		}
+    @media only screen and (max-width: $bp-medium) {
+      justify-self: start;
+    }
 
-		@media only screen and (max-width: $bp-small) {
-			padding: 0 1rem;
-			padding-top: 0.75rem;
-		}
-	}
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1rem;
+      padding-top: 0.75rem;
+    }
+  }
 }
