@@ -151,10 +151,10 @@ export const jobs = [
   }
 ];
 
-export const roles = ['Frontend', 'Backend', 'Fullstack'];
+// export const role = ['Frontend', 'Backend', 'Fullstack'];
 
-export const level = ['Junior', 'Midweight', 'Senior'];
+// export const level = ['Junior', 'Midweight', 'Senior'];
 
-export const languages = ['Python', 'Ruby', 'JavaScript', 'HTML', 'CSS'];
+// export const languages = ['Python', 'Ruby', 'JavaScript', 'HTML', 'CSS'];
 
-export const tools = ['React', 'Sass', 'Vue', 'Django', 'RoR', 'Ruby'];
+// export const tools = ['React', 'Sass', 'Vue', 'Django', 'RoR', 'Ruby'];
